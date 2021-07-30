@@ -33,6 +33,7 @@ function Insert(){
                             onChangeText={setNumber}
                             value={number}
                             keyboardType='numeric'
+                            
                         />
                     </View>
 
@@ -75,7 +76,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
         borderRadius: 5,
-        borderColor: COLORS.borderColor
+        borderColor: COLORS.borderColor,
+        ...FONTS.h3
     },
     inputContainer: {
         flexDirection: 'row',

@@ -3,7 +3,9 @@ export const COLORS = {
     gradient_start: '#e8dbfc',
     gradient_end: '#f8f9d2',
     textColor: '#767676',
-    borderColor: '#AAAAAA'
+    borderColor: '#AAAAAA',
+    in_color: '#50C878',
+    out_color: '#DC143C'
 }
 
 export const IMAGES = {
