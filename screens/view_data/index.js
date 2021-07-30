@@ -1,11 +1,40 @@
-import React from 'react';
-import { View, Text, ImageBackground, StyleSheet, TextInput, Dimensions } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, ImageBackground, StyleSheet, TextInput, Dimensions, Share } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 import { IMAGES, FONTS, COLORS } from '../../constants';
 import FillButton from '../../components/FillButton';
 import DataHistory from '../../components/DataHistory';
+import { filterData } from '../../redux/actions';
+
+const generateShareMessage = (data) => {
+    let messageString = "";
+    data.forEach(item => {
+        messageString = messageString + `${item.number} - ${item.times} \n`
+    })
+    return messageString
+}
 
 const { width } = Dimensions.get('window');
 function ViewData() {
+    const dispatch = useDispatch();
+    const { in_value, out_value, in_amount, out_amount } = useSelector(state => state.summary)
+    const entries = useSelector(state => state.entries);
+    const [filter, setFilter] = useState(null);
+
+    const filterHandler = () => {
+        dispatch(filterData(filter))
+        setFilter(null);
+    }
+
+    const onShare = async () => {
+        try {
+            const result = await Share.share({
+                message: generateShareMessage(entries)
+            })
+        } catch (err) {
+            alert(err.message)
+        }
+    }
     return (
         <View style={styles.container}>
             <ImageBackground
@@ -18,21 +47,24 @@ function ViewData() {
                         <Text style={styles.label}>Filter</Text>
                         <TextInput
                             style={styles.input}
+                            onChangeText={setFilter}
+                            value={filter}
+                            keyboardType='numeric'
                         />
                     </View>
-                    <FillButton text="Check" />
+                    <FillButton text="Check" onPress={filterHandler} />
                 </View>
                 <View style={styles.summaryContainer}>
                     <View style={styles.summaryItem}>
-                        <Text style={styles.summaryText}>73 In</Text>
-                        <Text style={styles.summaryText}>34 Out</Text>
+                        <Text style={styles.summaryText}>{in_value} In</Text>
+                        <Text style={styles.summaryText}>{out_value} Out</Text>
                     </View>
                     <View style={[styles.summaryItem, { marginTop: 10 }]}>
-                        <Text style={[styles.summaryText, { color: COLORS.in_color }]}>₹17000</Text>
-                        <Text style={[styles.summaryText, { color: COLORS.out_color }]}>₹38000</Text>
+                        <Text style={[styles.summaryText, { color: COLORS.in_color }]}>₹{in_amount}</Text>
+                        <Text style={[styles.summaryText, { color: COLORS.out_color }]}>₹{out_amount}</Text>
                     </View>
                     <View style={styles.shareButtonContainer}>
-                        <FillButton text="Share" />
+                        <FillButton text="Share" onPress={onShare} />
                     </View>
                 </View>
                 <DataHistory />
