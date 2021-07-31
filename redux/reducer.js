@@ -1,7 +1,8 @@
-import {SET_AUTHENTICATED, SET_ENTRIES, SET_SUMMARY} from './types';
+import {SET_AUTHENTICATED, SET_ENTRIES, SET_SUMMARY,SET_AUTH_ERROR} from './types';
 
 const initialState = {
   isAuthenticated: false,
+  authError: null,
   entries: new Array(8)
     .fill()
     .map((item, index) => ({id: index, number: 10, times: 5})),
@@ -21,6 +22,8 @@ export default function reducer(state = initialState, action) {
       return {...state, entries: action.payload};
     case SET_SUMMARY:
       return {...state, summary: action.payload};
+    case SET_AUTH_ERROR:
+      return {...state, authError: action.payload};
     default:
       return state;
   }

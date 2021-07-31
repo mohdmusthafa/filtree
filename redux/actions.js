@@ -1,9 +1,43 @@
-import {SET_ENTRIES, SET_SUMMARY} from './types';
+import { SET_ENTRIES, SET_SUMMARY, SET_AUTHENTICATED, SET_AUTH_ERROR } from './types';
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+export const login = (username, password) => async dispatch => {
+  try {
+    const response = await axios.post('/login', { username, password });
+    if (response.data.accessToken) {
+      await AsyncStorage.setItem('accessToken', response.data.accessToken)
+    }
+
+    dispatch({
+      type: SET_AUTH_ERROR,
+      payload: null
+    })
+
+    dispatch({
+      type: SET_AUTHENTICATED,
+      payload: true,
+    })
+  } catch (err) {
+    console.log(err);
+    dispatch({
+      type: SET_AUTH_ERROR,
+      payload: "Username or Password Incorrect"
+    })
+  }
+};
+
+export const hideAuthError = () => dispatch => {
+  dispatch({
+    type: SET_AUTH_ERROR,
+    payload: null
+  })
+}
 
 export const addEntry = (number, times) => async (dispatch, getState) => {
   try {
     //api call
-    const {entries} = getState();
+    const { entries } = getState();
     let response = JSON.parse(JSON.stringify(entries));
     response.unshift({
       id: response.length + 1,
@@ -22,7 +56,7 @@ export const addEntry = (number, times) => async (dispatch, getState) => {
 export const filterData = filter => async (dispatch, getState) => {
   try {
     //api call
-    const {entries} = getState();
+    const { entries } = getState();
     let response = JSON.parse(JSON.stringify(entries));
     response.splice(4, 1);
     response.splice(2, 1);

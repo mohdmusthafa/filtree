@@ -6,6 +6,7 @@ export const COLORS = {
   borderColor: '#AAAAAA',
   in_color: '#50C878',
   out_color: '#DC143C',
+  alert_color: '#FA5F55',
 };
 
 export const IMAGES = {
