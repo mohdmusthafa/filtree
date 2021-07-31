@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -8,11 +8,13 @@ import {
   Dimensions,
   Share,
 } from 'react-native';
-import {useDispatch, useSelector} from 'react-redux';
-import {IMAGES, FONTS, COLORS} from '../../constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { useFocusEffect } from '@react-navigation/core'; 
+import { IMAGES, FONTS, COLORS } from '../../constants';
 import FillButton from '../../components/FillButton';
 import DataHistory from '../../components/DataHistory';
-import {filterData} from '../../redux/actions';
+import { filterData, getEntries, flushData } from '../../redux/actions';
+import DeleteButton from '../../components/DeleteButton';
 
 const generateShareMessage = data => {
   let messageString = '';
@@ -22,17 +24,17 @@ const generateShareMessage = data => {
   return messageString;
 };
 
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 function ViewData() {
   const dispatch = useDispatch();
-  const {in_value, out_value, in_amount, out_amount} = useSelector(
+  const { in_value, out_value, in_amount, out_amount } = useSelector(
     state => state.summary,
   );
   const entries = useSelector(state => state.entries);
   const [filter, setFilter] = useState(null);
 
-  const filterHandler = () => {
-    dispatch(filterData(filter));
+  const filterHandler = (condition) => {
+    dispatch(filterData(filter, condition));
     setFilter(null);
   };
 
@@ -45,6 +47,16 @@ function ViewData() {
       alert(err.message);
     }
   };
+
+  const flushHandler = () => {
+    dispatch(flushData())
+  }
+
+  
+  useFocusEffect(useCallback(() => {
+    dispatch(getEntries())
+  }, []))
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -61,23 +73,28 @@ function ViewData() {
               keyboardType="numeric"
             />
           </View>
-          <FillButton text="Check" onPress={filterHandler} />
+          <View style={styles.filterButtons}>
+            <FillButton text="Check In" onPress={() => filterHandler('lte')} />
+            <FillButton text="Check Out" onPress={() => filterHandler('gt')} />
+          </View>
+
         </View>
         <View style={styles.summaryContainer}>
           <View style={styles.summaryItem}>
             <Text style={styles.summaryText}>{in_value} In</Text>
             <Text style={styles.summaryText}>{out_value} Out</Text>
           </View>
-          <View style={[styles.summaryItem, {marginTop: 10}]}>
-            <Text style={[styles.summaryText, {color: COLORS.in_color}]}>
+          <View style={[styles.summaryItem, { marginTop: 10 }]}>
+            <Text style={[styles.summaryText, { color: COLORS.in_color }]}>
               ₹{in_amount}
             </Text>
-            <Text style={[styles.summaryText, {color: COLORS.out_color}]}>
+            <Text style={[styles.summaryText, { color: COLORS.out_color }]}>
               ₹{out_amount}
             </Text>
           </View>
           <View style={styles.shareButtonContainer}>
             <FillButton text="Share" onPress={onShare} />
+            <DeleteButton text="Flush" onPress={flushHandler} />
           </View>
         </View>
         <DataHistory />
@@ -130,7 +147,15 @@ const styles = StyleSheet.create({
   },
   shareButtonContainer: {
     marginTop: 10,
+    width: width * 0.7,
+    flexDirection: 'row',
+    justifyContent: 'space-around'
   },
+  filterButtons: {
+    width: width * 0.7,
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  }
 });
 
 export default ViewData;

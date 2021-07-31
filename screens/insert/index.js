@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import {View, Text, StyleSheet, ImageBackground, TextInput} from 'react-native';
 import {COLORS, FONTS, IMAGES} from '../../constants';
 import {addEntry} from '../../redux/actions';
 import {useDispatch} from 'react-redux';
+import {getEntries} from '../../redux/actions';
 
 import FillButton from '../../components/FillButton';
 import DataHistory from '../../components/DataHistory';
@@ -17,6 +19,10 @@ function Insert() {
     setNumber(null);
     setTimes(null);
   };
+
+  useFocusEffect(useCallback(() => {
+    dispatch(getEntries())
+  }, []))
 
   return (
     <View style={styles.container}>
