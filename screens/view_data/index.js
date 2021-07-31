@@ -35,7 +35,6 @@ function ViewData() {
 
   const filterHandler = (condition) => {
     dispatch(filterData(filter, condition));
-    setFilter(null);
   };
 
   const onShare = async () => {
