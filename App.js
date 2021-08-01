@@ -9,7 +9,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Splash from './screens/splash';
 import {checkAuthenticated} from './redux/actions';
 
-axios.defaults.baseURL = 'http://21.21.21.193:3000/api';
+axios.defaults.baseURL = 'http://3.109.142.49/api';
 
 axios.interceptors.request.use(
   async config => {
