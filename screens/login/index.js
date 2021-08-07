@@ -32,6 +32,7 @@ function Login() {
             style={styles.input}
             onChangeText={setUsername}
             value={username}
+            autoCapitalize="none"
           />
         </View>
         <View>
@@ -41,6 +42,7 @@ function Login() {
             onChangeText={setPassword}
             value={password}
             secureTextEntry={true}
+            autoCapitalize="none"
           />
         </View>
         {authError && (
