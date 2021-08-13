@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* filtreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* filtreeTests.m */; };
+		00E356F31AD99517003FC87E /* FILTREETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FILTREETests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		174B71D126C55A7D005601A4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174B71D026C55A7D005601A4 /* Launch Screen.storyboard */; };
-		177EC3FFFEE106570F8D8505 /* libPods-filtree-filtreeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02014C027DCB751B85C27F55 /* libPods-filtree-filtreeTests.a */; };
 		30BE35ED1E394CCE839518EA /* B612-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192FF9C94D6F4B5D92D95FD7 /* B612-Italic.ttf */; };
 		46CACE1D5C674F5C8F92EA3C /* B612-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41587237C41E4C7CA4AD90D0 /* B612-Regular.ttf */; };
-		5053293CFC2216F5F2EA0686 /* libPods-filtree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA8C29BA62F9FC4CF6B1813 /* libPods-filtree.a */; };
 		8EB3B75C71394CF4AC4A299E /* B612-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8D259769C48C597A77BBF /* B612-Bold.ttf */; };
+		B88AAECEA6F042D692E874F1 /* libPods-FILTREE-FILTREETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5B3F6648676BA5EA61EE36 /* libPods-FILTREE-FILTREETests.a */; };
 		C3BC6F9C1C9E44DB97C1C1E6 /* B612-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 983677ED1DFF4AFBA5E3A0C9 /* B612-BoldItalic.ttf */; };
+		C8434F0E71979F2DA3E98D0E /* libPods-FILTREE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE812A0807BB6FFDA73FF4 /* libPods-FILTREE.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,48 +26,48 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = filtree;
+			remoteInfo = FILTREE;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* filtreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = filtreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* FILTREETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FILTREETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* filtreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filtreeTests.m; sourceTree = "<group>"; };
-		02014C027DCB751B85C27F55 /* libPods-filtree-filtreeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-filtree-filtreeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* FILTREETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FILTREETests.m; sourceTree = "<group>"; };
+		0CFCEA5BFAE625D9A8C21193 /* Pods-FILTREE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FILTREE.release.xcconfig"; path = "Target Support Files/Pods-FILTREE/Pods-FILTREE.release.xcconfig"; sourceTree = "<group>"; };
 		0F851558617544679CDFD73E /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* filtree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = filtree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = filtree/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = filtree/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = filtree/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = filtree/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = filtree/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* FILTREE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FILTREE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FILTREE/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FILTREE/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FILTREE/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FILTREE/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FILTREE/main.m; sourceTree = "<group>"; };
 		174B71D026C55A7D005601A4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		192FF9C94D6F4B5D92D95FD7 /* B612-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-Italic.ttf"; path = "../assets/fonts/B612-Italic.ttf"; sourceTree = "<group>"; };
 		1CC8D259769C48C597A77BBF /* B612-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-Bold.ttf"; path = "../assets/fonts/B612-Bold.ttf"; sourceTree = "<group>"; };
-		210AD0FB0F5EA73B1D4666A1 /* Pods-filtree-filtreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree-filtreeTests.debug.xcconfig"; path = "Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BF76BD6677F4843A6C5D3CD /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		3BA8C29BA62F9FC4CF6B1813 /* libPods-filtree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-filtree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BB51DD66074F2089F8DDC1 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		41587237C41E4C7CA4AD90D0 /* B612-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-Regular.ttf"; path = "../assets/fonts/B612-Regular.ttf"; sourceTree = "<group>"; };
-		42A75D85BE2737F235331199 /* Pods-filtree-filtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree-filtreeTests.release.xcconfig"; path = "Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FC81287569846D0BF8C92AA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		503572C4A67949088EE866ED /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		67873222592A847B767E6E0E /* Pods-FILTREE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FILTREE.debug.xcconfig"; path = "Target Support Files/Pods-FILTREE/Pods-FILTREE.debug.xcconfig"; sourceTree = "<group>"; };
 		6B90B57E308B4CC39B1D7A67 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		766D0FE5C725EB9DED1D276B /* Pods-FILTREE-FILTREETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FILTREE-FILTREETests.release.xcconfig"; path = "Target Support Files/Pods-FILTREE-FILTREETests/Pods-FILTREE-FILTREETests.release.xcconfig"; sourceTree = "<group>"; };
 		85365D508DCA4B4A8A59D20F /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		89BAED9F52BB54E56D25C5B4 /* Pods-filtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree.debug.xcconfig"; path = "Target Support Files/Pods-filtree/Pods-filtree.debug.xcconfig"; sourceTree = "<group>"; };
 		983677ED1DFF4AFBA5E3A0C9 /* B612-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-BoldItalic.ttf"; path = "../assets/fonts/B612-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AB5B3F6648676BA5EA61EE36 /* libPods-FILTREE-FILTREETests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FILTREE-FILTREETests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC99984497AD4BF29CC9F844 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		B5CB5C51F7D0460093E134EE /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		B81F34743A5B4F5C9514E08B /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		BC88D861652349129CF21F28 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		BFFE812A0807BB6FFDA73FF4 /* libPods-FILTREE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FILTREE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16B26EFD66E4E979FA16B27 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		C17E12E3558DE550EE0DD398 /* Pods-FILTREE-FILTREETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FILTREE-FILTREETests.debug.xcconfig"; path = "Target Support Files/Pods-FILTREE-FILTREETests/Pods-FILTREE-FILTREETests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4AA122A84D84E01B9D53EF3 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		C529A889E5C14DB79A441BE5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		DE68D0ACD2954D068933AE7D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		E49FD3A8AEEE4B889550A2F1 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FB3F7D2FA6323A438378D62F /* Pods-filtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree.release.xcconfig"; path = "Target Support Files/Pods-filtree/Pods-filtree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177EC3FFFEE106570F8D8505 /* libPods-filtree-filtreeTests.a in Frameworks */,
+				B88AAECEA6F042D692E874F1 /* libPods-FILTREE-FILTREETests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,20 +83,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5053293CFC2216F5F2EA0686 /* libPods-filtree.a in Frameworks */,
+				C8434F0E71979F2DA3E98D0E /* libPods-FILTREE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* filtreeTests */ = {
+		00E356EF1AD99517003FC87E /* FILTREETests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* filtreeTests.m */,
+				00E356F21AD99517003FC87E /* FILTREETests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = filtreeTests;
+			path = FILTREETests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -107,7 +107,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* filtree */ = {
+		13B07FAE1A68108700A75B9A /* FILTREE */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -117,15 +117,15 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				174B71D026C55A7D005601A4 /* Launch Screen.storyboard */,
 			);
-			name = filtree;
+			name = FILTREE;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				3BA8C29BA62F9FC4CF6B1813 /* libPods-filtree.a */,
-				02014C027DCB751B85C27F55 /* libPods-filtree-filtreeTests.a */,
+				BFFE812A0807BB6FFDA73FF4 /* libPods-FILTREE.a */,
+				AB5B3F6648676BA5EA61EE36 /* libPods-FILTREE-FILTREETests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,10 +133,10 @@
 		3F3E18970DDCBA5142BC0D53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89BAED9F52BB54E56D25C5B4 /* Pods-filtree.debug.xcconfig */,
-				FB3F7D2FA6323A438378D62F /* Pods-filtree.release.xcconfig */,
-				210AD0FB0F5EA73B1D4666A1 /* Pods-filtree-filtreeTests.debug.xcconfig */,
-				42A75D85BE2737F235331199 /* Pods-filtree-filtreeTests.release.xcconfig */,
+				67873222592A847B767E6E0E /* Pods-FILTREE.debug.xcconfig */,
+				0CFCEA5BFAE625D9A8C21193 /* Pods-FILTREE.release.xcconfig */,
+				C17E12E3558DE550EE0DD398 /* Pods-FILTREE-FILTREETests.debug.xcconfig */,
+				766D0FE5C725EB9DED1D276B /* Pods-FILTREE-FILTREETests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* filtree */,
+				13B07FAE1A68108700A75B9A /* FILTREE */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* filtreeTests */,
+				00E356EF1AD99517003FC87E /* FILTREETests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D9910A9FBEC74C26897A05BC /* Resources */,
@@ -167,8 +167,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* filtree.app */,
-				00E356EE1AD99517003FC87E /* filtreeTests.xctest */,
+				13B07F961A680F5B00A75B9A /* FILTREE.app */,
+				00E356EE1AD99517003FC87E /* FILTREETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,45 +203,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* filtreeTests */ = {
+		00E356ED1AD99517003FC87E /* FILTREETests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "filtreeTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FILTREETests" */;
 			buildPhases = (
-				DC15D7C517B5D7C02B3FA4AC /* [CP] Check Pods Manifest.lock */,
+				AB81C20620441C8200043A00 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				83E04644CA15603929765072 /* [CP] Copy Pods Resources */,
+				6C2980AB86EC3B04540F8A31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = filtreeTests;
-			productName = filtreeTests;
-			productReference = 00E356EE1AD99517003FC87E /* filtreeTests.xctest */;
+			name = FILTREETests;
+			productName = FILTREETests;
+			productReference = 00E356EE1AD99517003FC87E /* FILTREETests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* filtree */ = {
+		13B07F861A680F5B00A75B9A /* FILTREE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "filtree" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FILTREE" */;
 			buildPhases = (
-				5CF1871C44881930C64E8E14 /* [CP] Check Pods Manifest.lock */,
+				0DD82FB2F38557F91AEF6A8B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				25B04DA15291067ED9DD5DF6 /* [CP] Copy Pods Resources */,
+				9DAFFFCB266DC29FBD90C471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = filtree;
-			productName = filtree;
-			productReference = 13B07F961A680F5B00A75B9A /* filtree.app */;
+			name = FILTREE;
+			productName = FILTREE;
+			productReference = 13B07F961A680F5B00A75B9A /* FILTREE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -274,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* filtree */,
-				00E356ED1AD99517003FC87E /* filtreeTests */,
+				13B07F861A680F5B00A75B9A /* FILTREE */,
+				00E356ED1AD99517003FC87E /* FILTREETests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,24 +318,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		25B04DA15291067ED9DD5DF6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-filtree/Pods-filtree-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-filtree/Pods-filtree-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-filtree/Pods-filtree-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CF1871C44881930C64E8E14 /* [CP] Check Pods Manifest.lock */ = {
+		0DD82FB2F38557F91AEF6A8B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,31 +333,48 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-filtree-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FILTREE-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83E04644CA15603929765072 /* [CP] Copy Pods Resources */ = {
+		6C2980AB86EC3B04540F8A31 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FILTREE-FILTREETests/Pods-FILTREE-FILTREETests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FILTREE-FILTREETests/Pods-FILTREE-FILTREETests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FILTREE-FILTREETests/Pods-FILTREE-FILTREETests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC15D7C517B5D7C02B3FA4AC /* [CP] Check Pods Manifest.lock */ = {
+		9DAFFFCB266DC29FBD90C471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FILTREE/Pods-FILTREE-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FILTREE/Pods-FILTREE-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FILTREE/Pods-FILTREE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB81C20620441C8200043A00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,7 +389,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-filtree-filtreeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FILTREE-FILTREETests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -422,7 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* filtreeTests.m in Sources */,
+				00E356F31AD99517003FC87E /* FILTREETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +440,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* filtree */;
+			target = 13B07F861A680F5B00A75B9A /* FILTREE */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,14 +448,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 210AD0FB0F5EA73B1D4666A1 /* Pods-filtree-filtreeTests.debug.xcconfig */;
+			baseConfigurationReference = C17E12E3558DE550EE0DD398 /* Pods-FILTREE-FILTREETests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = filtreeTests/Info.plist;
+				INFOPLIST_FILE = FILTREETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,17 +469,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/filtree.app/filtree";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FILTREE.app/FILTREE";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A75D85BE2737F235331199 /* Pods-filtree-filtreeTests.release.xcconfig */;
+			baseConfigurationReference = 766D0FE5C725EB9DED1D276B /* Pods-FILTREE-FILTREETests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = filtreeTests/Info.plist;
+				INFOPLIST_FILE = FILTREETests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,20 +493,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/filtree.app/filtree";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FILTREE.app/FILTREE";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89BAED9F52BB54E56D25C5B4 /* Pods-filtree.debug.xcconfig */;
+			baseConfigurationReference = 67873222592A847B767E6E0E /* Pods-FILTREE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 873J5XRZPB;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = filtree/Info.plist;
+				INFOPLIST_FILE = FILTREE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,8 +516,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = filtree;
+				PRODUCT_BUNDLE_IDENTIFIER = org.absentauthor.FILTREE;
+				PRODUCT_NAME = FILTREE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,13 +526,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB3F7D2FA6323A438378D62F /* Pods-filtree.release.xcconfig */;
+			baseConfigurationReference = 0CFCEA5BFAE625D9A8C21193 /* Pods-FILTREE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 873J5XRZPB;
-				INFOPLIST_FILE = filtree/Info.plist;
+				INFOPLIST_FILE = FILTREE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,8 +542,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = filtree;
+				PRODUCT_BUNDLE_IDENTIFIER = org.absentauthor.FILTREE;
+				PRODUCT_NAME = FILTREE;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -675,7 +675,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "filtreeTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FILTREETests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -684,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "filtree" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FILTREE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
