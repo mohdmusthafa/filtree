@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		174B71D126C55A7D005601A4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174B71D026C55A7D005601A4 /* Launch Screen.storyboard */; };
 		30BE35ED1E394CCE839518EA /* B612-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192FF9C94D6F4B5D92D95FD7 /* B612-Italic.ttf */; };
 		42A4D078E09A39FEB445DB54 /* libPods-filtree-filtreeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A44FB5DCD97407C73D136B /* libPods-filtree-filtreeTests.a */; };
 		46CACE1D5C674F5C8F92EA3C /* B612-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41587237C41E4C7CA4AD90D0 /* B612-Regular.ttf */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8EB3B75C71394CF4AC4A299E /* B612-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8D259769C48C597A77BBF /* B612-Bold.ttf */; };
 		B8F58E369C685722A66D637B /* libPods-filtree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E289B1E8672C884D2B2B7364 /* libPods-filtree.a */; };
 		C3BC6F9C1C9E44DB97C1C1E6 /* B612-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 983677ED1DFF4AFBA5E3A0C9 /* B612-BoldItalic.ttf */; };
@@ -41,6 +41,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = filtree/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = filtree/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = filtree/main.m; sourceTree = "<group>"; };
+		174B71D026C55A7D005601A4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		192FF9C94D6F4B5D92D95FD7 /* B612-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-Italic.ttf"; path = "../assets/fonts/B612-Italic.ttf"; sourceTree = "<group>"; };
 		1947CF6C4D1B592F14B31E45 /* Pods-filtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree.release.xcconfig"; path = "Target Support Files/Pods-filtree/Pods-filtree.release.xcconfig"; sourceTree = "<group>"; };
 		1CC8D259769C48C597A77BBF /* B612-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-Bold.ttf"; path = "../assets/fonts/B612-Bold.ttf"; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		64674FF795A4AAAD0FA78213 /* Pods-filtree-filtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree-filtreeTests.release.xcconfig"; path = "Target Support Files/Pods-filtree-filtreeTests/Pods-filtree-filtreeTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B90B57E308B4CC39B1D7A67 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		6EC6C578D519941FD1DBE1D6 /* Pods-filtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtree.debug.xcconfig"; path = "Target Support Files/Pods-filtree/Pods-filtree.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = filtree/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85365D508DCA4B4A8A59D20F /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		983677ED1DFF4AFBA5E3A0C9 /* B612-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "B612-BoldItalic.ttf"; path = "../assets/fonts/B612-BoldItalic.ttf"; sourceTree = "<group>"; };
 		AC99984497AD4BF29CC9F844 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				174B71D026C55A7D005601A4 /* Launch Screen.storyboard */,
 			);
 			name = filtree;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -292,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				174B71D126C55A7D005601A4 /* Launch Screen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8EB3B75C71394CF4AC4A299E /* B612-Bold.ttf in Resources */,
 				C3BC6F9C1C9E44DB97C1C1E6 /* B612-BoldItalic.ttf in Resources */,
@@ -456,7 +456,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = filtreeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +480,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = filtreeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 873J5XRZPB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = filtree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,6 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 873J5XRZPB;
 				INFOPLIST_FILE = filtree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -654,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

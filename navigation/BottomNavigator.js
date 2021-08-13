@@ -1,6 +1,5 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Insert from '../screens/insert';
@@ -30,6 +29,7 @@ function BottomNavigator() {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
+        headerShown: false
       })}>
       <Tab.Screen name="Insert" component={Insert} />
       <Tab.Screen name="View" component={ViewData} />

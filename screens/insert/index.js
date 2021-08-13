@@ -1,4 +1,5 @@
 import React, {useState, useCallback} from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import {View, Text, StyleSheet, ImageBackground, TextInput} from 'react-native';
 import {COLORS, FONTS, IMAGES} from '../../constants';
@@ -25,7 +26,6 @@ function Insert() {
   }, []))
 
   return (
-    <View style={styles.container}>
       <ImageBackground
         source={IMAGES.background}
         resizeMode="cover"
@@ -54,7 +54,6 @@ function Insert() {
         <FillButton text="Add" onPress={addHandler} />
         <DataHistory />
       </ImageBackground>
-    </View>
   );
 }
 
@@ -66,6 +65,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // justifyContent: 'center',
     alignItems: 'center',
+    height: '100%'
   },
   label: {
     margin: 12,

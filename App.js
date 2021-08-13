@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
 import {NavigationContainer} from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import BottomNavigator from './navigation/BottomNavigator';
 import Login from './screens/login';
 import {useSelector, useDispatch} from 'react-redux';
@@ -9,7 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Splash from './screens/splash';
 import {checkAuthenticated} from './redux/actions';
 
-axios.defaults.baseURL = 'http://3.109.142.49/api';
+axios.defaults.baseURL = 'http://13.233.143.137/api';
 
 axios.interceptors.request.use(
   async config => {
@@ -44,4 +45,8 @@ function App() {
   );
 }
 
-export default App;
+export default () => (
+  <SafeAreaProvider>
+    <App />
+  </SafeAreaProvider>
+);
