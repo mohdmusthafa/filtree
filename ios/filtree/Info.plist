@@ -43,7 +43,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>B612-Bold.ttf</string>
