@@ -7,6 +7,7 @@ import {COLORS, FONTS, IMAGES} from '../../constants';
 import {addEntry} from '../../redux/actions';
 import {useDispatch} from 'react-redux';
 import {getEntries, checkAuthenticated} from '../../redux/actions';
+import DismissKeyboardView from '../../components/DismissKeyboardView';
 
 import FillButton from '../../components/FillButton';
 import DataHistory from '../../components/DataHistory';
@@ -68,7 +69,9 @@ function Insert({ navigation }) {
           </View>
         </View>
         <FillButton text="Add" onPress={addHandler} />
+        <DismissKeyboardView>
         <DataHistory />
+        </DismissKeyboardView>
       </ImageBackground>
   );
 }
