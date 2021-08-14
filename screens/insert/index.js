@@ -1,16 +1,17 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import {View, Text, StyleSheet, ImageBackground, TextInput} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {COLORS, FONTS, IMAGES} from '../../constants';
 import {addEntry} from '../../redux/actions';
 import {useDispatch} from 'react-redux';
-import {getEntries} from '../../redux/actions';
+import {getEntries, checkAuthenticated} from '../../redux/actions';
 
 import FillButton from '../../components/FillButton';
 import DataHistory from '../../components/DataHistory';
 
-function Insert() {
+function Insert({ navigation }) {
   const dispatch = useDispatch();
   const [number, setNumber] = useState(null);
   const [times, setTimes] = useState(null);
@@ -24,6 +25,21 @@ function Insert() {
   useFocusEffect(useCallback(() => {
     dispatch(getEntries())
   }, []))
+
+  //logout
+
+  const logoutHandler = async () => {
+    await AsyncStorage.setItem('accessToken', '')
+    dispatch(checkAuthenticated())
+  }
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('tabLongPress', (e) => {
+      logoutHandler()
+    })
+
+    return unsubscribe;
+  }, [navigation])
 
   return (
       <ImageBackground
